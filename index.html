@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APSIT College Notes - Syllabus & Notes</title>
+    <link rel="icon" type="image/png" href="apsit-logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" class="search-bar" id="searchBar" placeholder="Search subjects, chapters, experiments...">
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+        </svg>
+    </button>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <span>College Notes</span>
+                </li>
+            </ol>
+        </nav>
+
+        <header>
+            <div class="logo-container">
+                <img src="apsit-logo.png" alt="APSIT Logo" class="college-logo">
+            </div>
+            <h1>APSIT College Notes</h1>
+        </header>
+
+        <nav class="nav-links">
+            <a href="lab-manual.html" class="nav-link">Lab Manual</a>
+        </nav>
+
+        <div class="subjects-container">
+            <!-- Applied Mathematics -->
+            <div class="subject-section subject-1">
+                <div class="subject-header">
+                    <h2 class="subject-title">Applied Mathematics</h2>
+                </div>
+                <div class="content-sections">
+                    <div class="syllabus-section">
+                        <h3 class="section-title">Syllabus</h3>
+                        <a href="https://drive.google.com/file/d/15AGE79hi7eCwrP06hQ0BGLtyLuAiztef/preview" class="syllabus-link">View Syllabus</a>
+                        <div class="question-bank-container">
+                            <a href="https://drive.google.com/file/d/1gxHMIClLsE3UvwXLAjGCfaq3NeJSHQIr/preview" class="question-bank-link">Question Bank</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Applied Physics -->
+            <div class="subject-section subject-2">
+                <div class="subject-header">
+                    <h2 class="subject-title">Applied Physics</h2>
+                </div>
+                <div class="content-sections">
+                    <div class="syllabus-section">
+                        <h3 class="section-title">Syllabus</h3>
+                        <a href="#" class="syllabus-link">View Syllabus</a>
+                    </div>
+                    <div class="notes-section">
+                        <h3 class="section-title">Modules</h3>
+                        <div class="modules-container">
+                            <div class="module-section">
+                                <h4 class="module-title">Module 1: Laser</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/12sTPH8vnsKpLwngeaFexYDu1HS0Py9Aq/preview" class="topic-link">Module 1 - Laser</a>
+                                </div>
+                            </div>
+                            <div class="module-section">
+                                <h4 class="module-title">Module 2: Optical Fibre</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1XsjCv8I4qQMFGqwgO6S7SQg09mWjWZos/preview" class="topic-link">Module 2 - Optical Fibre</a>
+                                </div>
+                            </div>
+                            <div class="module-section">
+                                <h4 class="module-title">Module 3: Interference in Thin Film</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/19sZLRfzwf1AAF1zGxpTakrxIIsFJMfAO/preview" class="topic-link">Module 3 - Interference in Thin Film</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Applied Chemistry -->
+            <div class="subject-section subject-3">
+                <div class="subject-header">
+                    <h2 class="subject-title">Applied Chemistry</h2>
+                </div>
+                <div class="content-sections">
+                    <div class="syllabus-section">
+                        <h3 class="section-title">Syllabus</h3>
+                        <a href="https://drive.google.com/file/d/1sriFbOXOuperqEkwFxHQi61PEaVMvv5g/preview" class="syllabus-link">View Syllabus</a>
+                        <div class="assignments-grid">
+                            <a href="https://drive.google.com/file/d/1SZw_fZRa8MpEUxucKeZP7wvGU-4REG5t/preview" class="assignment-link">Assignment 1</a>
+                            <a href="https://drive.google.com/file/d/1ia9nwubPzHdNxsGkB0qLFPaS-Skhsi4b/preview" class="assignment-link">Assignment 2</a>
+                        </div>
+                    </div>
+                    <div class="notes-section">
+                        <h3 class="section-title">Modules</h3>
+                        <div class="modules-container">
+                            <div class="module-section">
+                                <h4 class="module-title">Module 1: Fuel and Combustion</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1Dcc5-ce-3fZS8PI4Esl_FSDudrONMsO3/preview" class="topic-link">Combustion and Its Numerical</a>
+                                    <a href="https://drive.google.com/file/d/1WlbRccLFr1P5f0IHOeYVzITPgryUeQLN/preview" class="topic-link">Fuel Introduction</a>
+                                    <a href="https://drive.google.com/file/d/1kgwszjxFoV2q4pw8l-V28gYUZw90yZOT/preview" class="topic-link">Numerical</a>
+                                    <a href="https://drive.google.com/file/d/1Msu9jraH0GYV34UHuePhSGAIJEb-kNyH/preview" class="topic-link">Proximate and Ultimate Analysis of Fuel</a>
+                                    <a href="https://drive.google.com/file/d/1UHhB55eJkxBA__ShCZaaHACC-LS0V_hY/preview" class="topic-link">Proximate and Ultimate Notes</a>
+                                </div>
+                            </div>
+                            <div class="module-section">
+                                <h4 class="module-title">Module 2: Corrosion</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1KlxAA-0T3-Xu5NztXx4kKWA2Fc_LMKN2/preview" class="topic-link">Dry and Wet Corrosion</a>
+                                    <a href="https://drive.google.com/file/d/1Gdyf8th8mm64GkAO3bR7e60Auh4zgzyr/preview" class="topic-link">Factors Affecting Rate of Corrosion</a>
+                                </div>
+                            </div>
+                            <div class="module-section">
+                                <h4 class="module-title">Module 3: Alloys</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1JhpI_grFlqsWM5wOHZqQ_v3B-2IZXAj4/preview" class="topic-link">Phase, Component, Degree of Freedom</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineering Mechanics -->
+            <div class="subject-section subject-4">
+                <div class="subject-header">
+                    <h2 class="subject-title">Engineering Mechanics</h2>
+                </div>
+                <div class="content-sections">
+                    <div class="syllabus-section">
+                        <h3 class="section-title">Syllabus</h3>
+                        <a href="#" class="syllabus-link">View Syllabus</a>
+                        <div class="assignments-grid">
+                            <a href="https://drive.google.com/file/d/1w7FLgvOTye8i4tyFzgwPk1fyA1sb4ba1/preview" class="assignment-link">Assignment:System of Forces</a>
+                            <a href="https://drive.google.com/file/d/1KdgdEOOHKKJHFlhBTywfS3Dl34eWSzQ2/preview" class="assignment-link">Assignment:Centroid</a>
+                        </div>
+                        <div class="question-bank-container">
+                            <a href="https://drive.google.com/file/d/15dgAh2ZETWJO2-Q5yvz33cV7FvOXGbKp/preview" class="question-bank-link">Question Bank</a>
+                        </div>
+                    </div>
+                    <div class="notes-section">
+                        <h3 class="section-title">Question Bank Solutions</h3>
+                        <div class="question-bank-container">
+                            <a href="https://drive.google.com/file/d/1fUCCfvXtAaNPb8AhaZdSb1lHQSrkYPBT/preview" class="question-bank-link">Question Bank Solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BEE (Basic Electronics and Electrical Engineering) -->
+            <div class="subject-section subject-5">
+                <div class="subject-header">
+                    <h2 class="subject-title">BEE (Basic Electronics and Electrical Engineering)</h2>
+                </div>
+                <div class="content-sections">
+                    <div class="syllabus-section">
+                        <h3 class="section-title">Syllabus</h3>
+                        <a href="https://drive.google.com/file/d/1Utk1N5KjJK9Q0KQDUSq9QMoxe4bhwR4-/preview" class="syllabus-link">View Syllabus</a>
+                    </div>
+                    <div class="notes-section">
+                        <h3 class="section-title">Modules</h3>
+                        <div class="modules-container">
+                            <div class="module-section">
+                                <h4 class="module-title">Module 1: DC Circuits</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1TLPmX0wLrP7Sz5KmYnQSRmF2WSaLZvlu/preview" class="topic-link">Electric Potential</a>
+                                    <a href="https://drive.google.com/file/d/1pRa8qMD42WjIUg93I9V4j1AypsTrSTzM/preview" class="topic-link">KVL and KCL</a>
+                                    <a href="https://drive.google.com/file/d/1LiElAhnBDsdLwIW-ONV70UDw4rQgwTSO/preview" class="topic-link">Mesh Analysis</a>
+                                    <a href="https://drive.google.com/file/d/1fECxhAH74gy-b6zIPFf5uEdb0MDXFtfK/preview" class="topic-link">Nodal Analysis</a>
+                                    <a href="https://drive.google.com/file/d/1EaO0Dv_-z9zQjrXK1_kUQu7FDUFcxIzc/preview" class="topic-link">Series and Parallel</a>
+                                    <a href="https://drive.google.com/file/d/19ntJl7xJfMm2p9CYUtz8965QT4pfbDpJ/preview" class="topic-link">Source Transformation</a>
+                                    <a href="https://drive.google.com/file/d/1IKbtCo-_PZG7zu3fIPAwgpvTEUMIWFjx/preview" class="topic-link">Star–Delta Transformation</a>
+                                    <a href="https://drive.google.com/file/d/1VA8SsfIEkaQ1MguICak6NV6gP6F85jtL/preview" class="topic-link">Superposition Theorem</a>
+                                    <a href="https://drive.google.com/file/d/1Lq51OO8Pq16m3paHn6ZLi7nojhCd2-h2/preview" class="topic-link">Thevenin's Theorem</a>
+                                    <a href="https://drive.google.com/file/d/1rxArfbboQXvSiRpqlZ370SoAJ0S7344m/preview" class="topic-link">Norton's Theorem</a>
+                                    <a href="https://drive.google.com/file/d/1Dh7KPLlqXgsQzh8FpL9f6J3U29Epm9Kw/preview" class="topic-link">Maximum Power Transfer</a>
+                                </div>
+                            </div>
+                            <div class="module-section">
+                                <h4 class="module-title">Module 2: Special Purpose Diodes</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1eSue18oXmj6h1jqK-hAtCV7GiaMMQ5Eb/preview" class="topic-link">Diodes</a>
+                                    <a href="https://drive.google.com/file/d/1zi3P5bS7iggav7Kyn0u27frgNv56wZKH/preview" class="topic-link">Zener Diode</a>
+                                </div>
+                            </div>
+                            <div class="module-section">
+                                <h4 class="module-title">Module 3: Transistors</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1nxjgq5SHsBC3ZRr5H6-gwPsSC3YBsZu1/preview" class="topic-link">Introduction to Transistors (1–5)</a>
+                                    <a href="https://drive.google.com/file/d/19B3fdCW65tX6Q9YvTBdcCNFKPhPUzRBo/preview" class="topic-link">Introduction to Transistors (6–9)</a>
+                                    <a href="https://drive.google.com/file/d/1lQPzlCZi6KsVkbFaMFJbuBaQdSSDKwsg/preview" class="topic-link">BJT Characteristics</a>
+                                    <a href="https://drive.google.com/file/d/1eNJ9YGp7MGd_0Vauen3exLbZiEvmM4KF/preview" class="topic-link">Application of BJT</a>
+                                    <a href="https://drive.google.com/file/d/19t64FNoZlEtJf9btzkorEzZX46PHTpd3/preview" class="topic-link">JFET Characteristics</a>
+                                    <a href="https://drive.google.com/file/d/1BbWxW0ZDvwR2ghhq00Fo-Gb21cFtBq4U/preview" class="topic-link">JFET Applications</a>
+                                    <a href="https://drive.google.com/file/d/1EMHCbDPpNN27Kh-NvxWXYFrJiI89Gn2Q/preview" class="topic-link">Introduction to FET</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C Programming -->
+            <div class="subject-section subject-6">
+                <div class="subject-header">
+                    <h2 class="subject-title">C Programming</h2>
+                </div>
+                <div class="content-sections">
+                    <div class="syllabus-section">
+                        <h3 class="section-title">Syllabus</h3>
+                        <a href="https://drive.google.com/file/d/1UdZsw6yvBqe90-1EsAMbxf07vonRT5Na/preview" class="syllabus-link">View Syllabus</a>
+                    </div>
+                    <div class="notes-section">
+                        <h3 class="section-title">Modules</h3>
+                        <div class="modules-container">
+                            <div class="module-section">
+                                <h4 class="module-title">Module 1: Operators in C</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1n0OD9YnHd2YpHAwkhGEVVafuyBkds7V-/preview" class="topic-link">Module 1 Notes</a>
+                                    <a href="https://drive.google.com/file/d/112sjHXmUvLhuNwTbDuSrj7_WUJwQFFj9/preview" class="topic-link">Module 1 PPT</a>
+                                </div>
+                            </div>
+                            <div class="module-section">
+                                <h4 class="module-title">Module 2: Control Structures in C</h4>
+                                <div class="topics-grid">
+                                    <a href="https://drive.google.com/file/d/1xZ0imTjS8WiS8d5oL6B0kcgflkvqwDus/preview" class="topic-link">Module 2 Notes 1</a>
+                                    <a href="https://drive.google.com/file/d/10Tyt_Gl57YpZ_vlbEtvIuzO2bm42T44S/preview" class="topic-link">Module 2 Notes 2</a>
+                                    <a href="https://drive.google.com/file/d/1yp8607F-dE89tVlMga-rLabf1UuLMvtv/preview" class="topic-link">Module 2 Notes 3</a>
+                                    <a href="https://drive.google.com/file/d/1ULSxEEP31QUKIwTLEe1qMOxKSekuuMJW/preview" class="topic-link">Module 2 Notes 4</a>
+                                    <a href="https://drive.google.com/file/d/1nOYVkzRizqvjv29nFckxp3fLNQ5KlsVH/preview" class="topic-link">Module 2 Notes 5</a>
+                                    <a href="https://drive.google.com/file/d/19kDkLxbM6cLnQweRmHjyRsuq4P9oNVTQ/preview" class="topic-link">Module 2 PPT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UHV -->
+            <div class="subject-section subject-7">
+                <div class="subject-header">
+                    <h2 class="subject-title">UHV</h2>
+                </div>
+                <div class="content-sections">
+                    <div class="syllabus-section">
+                        <h3 class="section-title">Syllabus</h3>
+                        <a href="https://drive.google.com/file/d/1EevWqk7Q5YDRlCGevgBbjKBKqtaOQmX-/preview" class="syllabus-link">View Syllabus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PCE -->
+            <div class="subject-section subject-8">
+                <div class="subject-header">
+                    <h2 class="subject-title">PCE</h2>
+                </div>
+                <div class="content-sections">
+                    <div class="syllabus-section">
+                        <h3 class="section-title">Syllabus</h3>
+                        <div class="syllabus-links">
+                            <a href="https://drive.google.com/file/d/1QifNdg_7ONyA4Q0ffBzbSthvAbferd_3/preview" class="syllabus-link">Theory Syllabus</a>
+                            <a href="https://drive.google.com/file/d/10ipFcjsantmUrEpE1y9L_YZUXuyz6Woi/preview" class="syllabus-link">Lab Syllabus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Navigation Button -->
+    <div class="floating-nav" id="floatingNav">
+        <a href="lab-manual.html" class="floating-nav-btn">
+            Lab Manual →
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+
+    <!-- Mobile Swipe Hint -->
+    <div class="swipe-hint" id="swipeHint">
+        Swipe left/right to navigate
+    </div>
+
+    <script>
+        // Enhanced JavaScript functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide loading overlay
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').classList.add('hidden');
+            }, 1000);
+
+            // Theme toggle functionality
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+            
+            // Load saved theme
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            body.setAttribute('data-theme', savedTheme);
+            
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = body.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                body.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+            });
+
+            // Scroll effects
+            window.addEventListener('scroll', function() {
+                const floatingNav = document.getElementById('floatingNav');
+                const backToTop = document.getElementById('backToTop');
+                const header = document.querySelector('header');
+                const logo = document.querySelector('.college-logo');
+                
+                if (window.scrollY > 300) {
+                    floatingNav.classList.add('visible');
+                    backToTop.classList.add('visible');
+                    header.classList.add('scrolled');
+                    logo.classList.add('scrolled');
+                } else {
+                    floatingNav.classList.remove('visible');
+                    backToTop.classList.remove('visible');
+                    header.classList.remove('scrolled');
+                    logo.classList.remove('scrolled');
+                }
+            });
+
+            // Back to top functionality
+            document.getElementById('backToTop').addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+
+            // Mobile swipe gestures
+            let startX = 0;
+            let startY = 0;
+            
+            document.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+            });
+            
+            document.addEventListener('touchend', (e) => {
+                const endX = e.changedTouches[0].clientX;
+                const endY = e.changedTouches[0].clientY;
+                const diffX = startX - endX;
+                const diffY = startY - endY;
+                
+                // Check if horizontal swipe is more significant than vertical
+                if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+                    if (diffX > 0) {
+                        // Swipe left - go to lab manual
+                        window.location.href = 'lab-manual.html';
+                    } else {
+                        // Swipe right - could add previous page functionality
+                        console.log('Swipe right detected');
+                    }
+                }
+            });
+
+            // Hide swipe hint after 5 seconds
+            setTimeout(() => {
+                document.getElementById('swipeHint').style.display = 'none';
+            }, 5000);
+
+            // Search functionality
+            const searchBar = document.getElementById('searchBar');
+            const searchResults = document.getElementById('searchResults');
+            
+            // Get all searchable content
+            const searchableContent = [
+                ...document.querySelectorAll('.subject-title'),
+                ...document.querySelectorAll('.module-title'),
+                ...document.querySelectorAll('.topic-link'),
+                ...document.querySelectorAll('.syllabus-link'),
+                ...document.querySelectorAll('.experiment-title'),
+                ...document.querySelectorAll('.experiment-link')
+            ];
+            
+            searchBar.addEventListener('input', function() {
+                const query = this.value.toLowerCase().trim();
+                
+                if (query.length < 2) {
+                    searchResults.style.display = 'none';
+                    return;
+                }
+                
+                const results = searchableContent.filter(element => {
+                    const text = element.textContent.toLowerCase();
+                    return text.includes(query);
+                });
+                
+                if (results.length === 0) {
+                    searchResults.innerHTML = '<div class="search-result-item">No results found</div>';
+                } else {
+                    searchResults.innerHTML = results.map(element => {
+                        const text = element.textContent;
+                        const type = element.classList.contains('subject-title') ? 'Subject' :
+                                   element.classList.contains('module-title') ? 'Module' :
+                                   element.classList.contains('topic-link') ? 'Topic' :
+                                   element.classList.contains('syllabus-link') ? 'Syllabus' :
+                                   element.classList.contains('experiment-title') ? 'Experiment' : 'Link';
+                        
+                        return `<div class="search-result-item" onclick="scrollToElement('${element.id || element.textContent}')">
+                            <strong>${type}:</strong> ${text}
+                        </div>`;
+                    }).join('');
+                }
+                
+                searchResults.style.display = 'block';
+            });
+            
+            // Hide search results when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!searchBar.contains(e.target) && !searchResults.contains(e.target)) {
+                    searchResults.style.display = 'none';
+                }
+            });
+        });
+
+        // Scroll to element function
+        function scrollToElement(elementText) {
+            const elements = document.querySelectorAll('.subject-title, .module-title, .topic-link, .syllabus-link, .experiment-title, .experiment-link');
+            const element = Array.from(elements).find(el => el.textContent === elementText);
+            
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                element.style.background = 'rgba(255, 255, 0, 0.3)';
+                setTimeout(() => {
+                    element.style.background = '';
+                }, 2000);
+            }
+            
+            document.getElementById('searchResults').style.display = 'none';
+            document.getElementById('searchBar').value = '';
+        }
+    </script>
+</body>
+</html>
